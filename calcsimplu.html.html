@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>calculator</title>
+</head>
+
+<body>
+    <script>
+        var resultat = 0;
+        var num1 = parseFloat(window.prompt("Prima valoare: "));
+        var operatie = window.prompt("Operatia dorita: ");
+        var num2 = parseFloat(window.prompt("A doua valoare: "));
+
+
+        if (operatie === "+") {
+            resultat = num1 + num2;
+            alert(resultat);
+        } else if (operatie === "-") {
+            resultat = num1 - num2;
+            alert(resultat);
+        } else if (operatie === "/") {
+            if (num2 == 0) {
+                alert("operatie imposibila");
+            } else {
+                resultat = num1 / num2;
+                alert(resultat);
+            }
+        } else if (operatie === "*") {
+            resultat = num1 * num2;
+            alert(resultat);
+        } else {
+            alert("Operatia nu este una corecta. Alegeti +, -, *, /");
+        }
+    </script>
+</body>
+
+</html>
